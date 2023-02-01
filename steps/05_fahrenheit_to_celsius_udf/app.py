@@ -10,9 +10,11 @@
 # SNOWFLAKE ADVANTAGE: SnowCLI (PuPr)
 
 import sys
+From scipy.contants import convert_temperature #Comment this out later - part of step 10
 
 def main(temp_f: float) -> float:
-    return (float(temp_f) - 32) * (5/9)
+    # return (float(temp_f) - 32) * (5/9) #initial run of step 5. Commented out during step 10.
+    return convert_temperature(float(temp_f), 'F', 'C') #Comment this out later - part of step 10
 
 
 # For local debugging
